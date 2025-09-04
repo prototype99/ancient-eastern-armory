@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>[Dizzy] Ancient Eastern Armory</name>
+    <author>Geminingen_Dizzy</author>
+	<supportedVersions><li>1.2</li><li>1.3</li><li>1.4</li><li>1.5</li><li>1.6</li></supportedVersions>
+	<packageId>Dizzy.Eastern.Armory</packageId>
+    <description>
+
+Updating this mod for v1.6. Should still work for 1.3, 1.4, 1.5.
+
+I found this mod to be charming but woefully overpowered, making plate armor worthless. So I rebalaned the armor factors, upped crafting skills required for some of the items, and slightly adjusted other things. I play tribals a lot, so wanted other armor options, and like these better than VE's take on things.
+
+Also, and this was sort of major- I have refigured the ingredients required to make the items to use "stuff" more often for metallics, and the armor is now figured by the sort of metal you use. Open to discussion on the values you see.
+
+One last thing- the Nija outfit and headgear now increases a pawns' melee dodge abilty.
+
+Bring various weapon and armor from Ancient Asia.
+
+This is NOT my original work. Original is by Geminingen.
+			 
+    </description>
+    </ModMetaData>

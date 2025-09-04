@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- Asian Noble Cloth -->
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>Ancient_AsianNobleCloth</defName>
+		<label>Asian Noble Cloth</label>
+		<description>Long, luxurious silk outfit with long sleeves. It was worn by officials of the ancient kingdom. While there are some decorative mettalic elements, it is not meant to be worn as armor, per se. Although it does a good job cooling off a person during the heat.</description>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Apparel/AsianNobleCloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+		<costList>
+			<!-- <Cloth>80</Cloth> -->
+			<Steel>5</Steel>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>3</Mass>
+			<StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+
+			
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.1</PainShockThreshold>
+			<SocialImpact>0.2</SocialImpact>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/AsianNobleCloth</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Royal</li>
+				<li>RoyalTier2</li>
+				<li>MedievalMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<renderSkipFlags><li>None</li></renderSkipFlags>
+			<drawData>
+				<dataNorth>
+					<layer>51</layer>
+				</dataNorth>
+			</drawData>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- Asian Noble Hat -->
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>Ancient_AsianNobleHat</defName>
+		<label>Asian Noble Hat</label>
+		<description>An open helmet, with some style to it. Colorful decorations note this as something to be worn by nobles.</description>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Apparel/AsianNobleHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<costList>
+			<Cloth>30</Cloth>
+			<!-- <Steel>10</Steel> -->
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>4</Mass>
+			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+
+			
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+			<PainShockThreshold>0.1</PainShockThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/AsianNobleHat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>Royal</li>
+				<li>RoyalTier2</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- Ninja Gi -->
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>Ancient_NinjaGi</defName>
+		<label>Ninja Gi</label>
+	
+		<description>Wear this and you will be a real ninja! While not a substitute for real ninja training, the way this clothing allows for freedom of movement, if one is already skilled at dodging, one's talent will be unbounded by ill fitting clothes!</description>
+
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Apparel/NinjaGi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<tradeability>Sellable</tradeability>
+
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>2</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+
+		<equippedStatOffsets>
+			<MeleeDodgeChance>3</MeleeDodgeChance>
+			<PainShockThreshold>0.2</PainShockThreshold>
+			<HuntingStealth>0.15</HuntingStealth>
+			<MoveSpeed>0.1</MoveSpeed>
+			
+		</equippedStatOffsets>
+		
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/NinjaGi</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<renderSkipFlags><li>None</li></renderSkipFlags>
+			<drawData>
+				<dataNorth>
+					<layer>51</layer>
+				</dataNorth>
+			</drawData>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	<!-- Ninja Mask -->
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>Ancient_NinjaMask</defName>
+		<label>Ninja Mask</label>
+		<description>Keeps the wind and sand out of your face. Also helps to hide your face in the darkness. Hidden metal plate included for some protection.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers Inherit="false">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Apparel/NinjaMask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<MaxHitPoints>70</MaxHitPoints>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		
+		<equippedStatOffsets>
+			<MeleeDodgeChance>3</MeleeDodgeChance>
+			<HuntingStealth>0.2</HuntingStealth>
+			<PainShockThreshold>0.15</PainShockThreshold>
+			<MoveSpeed>0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/NinjaMask</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255,255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+</Defs>
